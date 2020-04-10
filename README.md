@@ -13,12 +13,12 @@ Application properties : https://docs.spring.io/spring-boot/docs/current/referen
 |  ID  |  Annotation  |  Desc  |
 | ------------ | ------------ | ------------ |
 |  1  | @RequestMapping  |   |
-|  2  | @  |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
+|  2  | @WebAppConfiguration  |  For MVC configuration |
+| 3   |  @SpringBootApplication  |   |
+|  4  |  @EntityScan(basePackages="room.springboot.model")  |  JPA entities or Hibernate entities |
+| 5   |  @EnableJpaRepositories(basePackages="room.springboot.*")  |  JPA repositories  |
+|  6 |  @ComponentScan("room.springboot.controller")   |  Any component classes you have  |
+|  7 |  @EnableAutoConfiguration  |   |
 |   |   |   |
 |   |   |   |
 |   |   |   |
